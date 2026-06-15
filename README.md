@@ -24,30 +24,6 @@ dibangun **murni** dengan HTML, CSS, JavaScript, PHP, dan MySQL **tanpa library/
 - **XAMPP** (Apache + MySQL/MariaDB) — atau server PHP 8 + MySQL lainnya.
 - PHP 8.0 atau lebih baru.
 
----
-
-## 🚀 Cara Menjalankan (XAMPP)
-
-1. **Salin folder** `perpustakaan_torang_baca` ke dalam `C:\xampp\htdocs\`.
-2. Buka **XAMPP Control Panel** → klik **Start** pada **Apache** dan **MySQL**.
-3. **Impor database**:
-   - Buka <http://localhost/phpmyadmin>.
-   - (Opsional) buat database baru bernama `torang_baca`.
-   - Pilih tab **Import** → pilih berkas `sql/torang_baca.sql` → **Go**.
-     Skrip ini otomatis membuat database `torang_baca` beserta seluruh tabel & data awal.
-
-   Atau lewat terminal:
-   ```bash
-   C:\xampp\mysql\bin\mysql.exe -u root < sql\torang_baca.sql
-   ```
-4. Buka aplikasi di browser:
-   <http://localhost/perpustakaan_torang_baca/>
-
-> Jika konfigurasi MySQL Anda memakai password atau host berbeda,
-> ubah nilainya di [`config/db.php`](config/db.php).
-
----
-
 ## 🔑 Akun Demo
 
 | Peran  | Email                     | Kata Sandi |
@@ -102,15 +78,3 @@ perpustakaan_torang_baca/
 - **Koneksi database**: [`config/db.php`](config/db.php).
 
 ---
-
-## 📋 Pemenuhan Rubrik Tugas
-
-| Persyaratan | Implementasi |
-|---|---|
-| HTML, CSS, JS, PHP, MySQL | Seluruh proyek |
-| Halaman dinamis dari MySQL | `index.php`, `book.php` |
-| Halaman statis info anggota | `about.php` |
-| Login admin/member | `login.php`, `auth.php` |
-| Manajemen konten (CRUD) | `admin/books.php`, `book_form.php`, `book_save.php`, `book_delete.php` |
-| Halaman konten kreatif | Rating bintang + sistem denda & "Tandai Lunas" |
-| Tanpa framework/library | Semua kode ditulis vanilla |
